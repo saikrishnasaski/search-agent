@@ -2,7 +2,6 @@ import os
 from dotenv import load_dotenv
 from langchain_community.document_loaders import TextLoader
 from langchain_text_splitters import CharacterTextSplitter
-# from langchain_openai import OpenAIEmbeddings
 from langchain_voyageai import VoyageAIEmbeddings
 from langchain_pinecone import PineconeVectorStore
 from pinecone import Pinecone
@@ -26,7 +25,7 @@ if __name__ == '__main__':
     print(f"{len(texts)} documents")
 
     # embeddings = OpenAIEmbeddings(openai_api_key=os.getenv("OPENAI_API_KEY"))
-    embeddings = VoyageAIEmbeddings(api_key=os.getenv("VOYAGEAI_API_KEY"), model="voyage-3")
+    embeddings = VoyageAIEmbeddings(api_key=os.getenv("VOYAGE_API_KEY"), model="voyage-3.5")
 
     print("ingesting...")
     pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"))
