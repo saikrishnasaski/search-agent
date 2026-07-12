@@ -405,3 +405,7 @@ Terms
 Text to speech
 
 Teams
+
+About Me:
+I am Sai Krishna Reddy Chityala, works as senior software specialist in Experian. Specialized in Angular and React Native
+frameworks. I live in Konoha, Hidden Leaf and born on 19 April 1994.
